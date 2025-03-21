@@ -56,7 +56,7 @@ Copy
 Edit
 from text2reality import generate_image
 
-# description = "A futuristic city with flying cars at sunset"
+description = "A futuristic city with flying cars at sunset"
 image = generate_image(description)
 
 image.show()  # Displays the generated image
