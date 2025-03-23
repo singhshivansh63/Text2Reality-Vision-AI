@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
       "src": "/(.*)",
       "dest": "main.py"
     }
@@ -23,6 +27,15 @@
     "PYTHONUNBUFFERED": "1"
   },
   "headers": [
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/x-icon"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
